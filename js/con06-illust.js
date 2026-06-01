@@ -34,7 +34,11 @@ $(function () {
         // markers: true,
       },
     })
-    .to("body", { backgroundColor: "#1E3568", color: "#F6F7F1" })
+    .fromTo(
+      "body",
+      { backgroundColor: "#f6f7f1", color: "#1e3568" },
+      { backgroundColor: "#1E3568", color: "#F6F7F1" },
+    )
     .to(".con06 .title", { position: "fixed", left: 0, top: 0 });
 
   //My, Work글자가 양쪽으로 사라지게하는 효과!

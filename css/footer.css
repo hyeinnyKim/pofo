@@ -1,0 +1,73 @@
+/* 네이비컬러 {color:#1E3568;} 
+/ rgb(30, 53, 104) */
+/* 아이보리컬러 {color:#F6F7F1;} 
+/ rgb(246, 247, 241) */
+/* 핑크컬러 {color:#F1C6C6;} /  rgb(241, 198, 198) */
+
+/* footer */
+footer {
+  width: 100vw;
+  height: 100vh;
+  background: #f6f7f1;
+  color: #1e3568;
+  position: relative;
+}
+/* contact글자효과 */
+footer .contact-full-wrapper {
+  width: 100%;
+  height: 20vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* 배경 분할: 위쪽(흰색), 아래쪽(푸터색 #222) */
+  background: linear-gradient(to bottom, #1e3568 50%, #f6f7f1 50%);
+}
+
+footer .contact-text {
+  margin: 0;
+  padding: 0;
+  line-height: 2;
+  font-family: "Abril Fatface", serif;
+  font-weight: 900;
+  /* 화면 너비에 꽉 차게 설정 */
+  width: 100vw;
+  font-size: 18vw; /* 대략적인 크기 */
+  text-align: center;
+  /* 글자 사이 간격을 좁혀서 더 빽빽하게 (기호에 따라 조절) */
+  letter-spacing: -1.2vw;
+  /* 강제로 양끝을 맞추기 위한 트릭 (필요시 사용) */
+  display: block;
+  /* 글자를 가로로 살짝 늘려 빈틈 제거 */
+  transform: scaleX(1.2);
+  /* 글자 색상 분할 */
+  background: linear-gradient(to bottom, #f6f7f1 50%, #1e3568 50%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+footer ul {
+  width: 100%;
+  font-size: 1.5vw;
+}
+footer ul li {
+  position: absolute;
+  bottom: 1vw;
+}
+footer ul .phone {
+  left: 3vw;
+}
+footer ul .copyright {
+  right: 3vw;
+}
+footer ul .copyright span {
+  font-family: "Allura", cursive;
+}
+footer .hope {
+  text-align: center;
+  font-size: 2vw;
+  position: absolute;
+  bottom: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

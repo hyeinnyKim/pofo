@@ -16,6 +16,7 @@ a {
 /* 아이보리컬러 {color:#F6F7F1;} / rgb(246, 247, 241) */
 /* 핑크컬러 {color:#F1C6C6;} /  rgb(241, 198, 198) */
 /* 그레이컬러 {color:#828282;} */
-#java {
+#java,
+.java {
   display: none;
 }

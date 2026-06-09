@@ -66,8 +66,10 @@ footer ul .copyright span {
 footer .hope {
   text-align: center;
   font-size: 2vw;
+  font-weight: 500;
+  line-height: 1.6;
   position: absolute;
   bottom: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 0;
+  width: 100%;
 }

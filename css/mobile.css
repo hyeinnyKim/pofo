@@ -1,14 +1,8 @@
-/* 네이비컬러 {color:#1E3568;} / rgb(30, 53, 104) */
-/* 아이보리컬러 {color:#F6F7F1;} / rgb(246, 247, 241) */
-/* 핑크컬러 {color:#F1C6C6;} /  rgb(241, 198, 198) */
-/* 그레이컬러 {color:#828282;} */
-
-@media (min-width: 1025px) {
-  .mo {
+@media (max-width: 1024px) {
+  .pc {
     display: none;
   }
-  /* 헤더 */
-  /* header */
+  /* 헤더 시작 */
   header {
     position: relative;
     width: 100%;
@@ -20,8 +14,8 @@
     height: 10vh;
     display: flex;
     justify-content: space-between;
-    padding: 3vw;
-    font-size: 2vw;
+    padding: 5vw;
+    font-size: 8vw;
     align-items: center;
     color: #f1c6c6;
   }
@@ -40,10 +34,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3vw;
+    font-size: 6vw;
     display: flex;
     flex-direction: column;
-    gap: 2vw;
+    gap: 5vw;
     text-align: center;
   }
   header .open,
@@ -62,8 +56,8 @@
   }
   .topbtn a {
     display: block;
-    width: 4vw;
-    height: 4vw;
+    width: 10vw;
+    height: 10vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,11 +65,10 @@
   }
   .topbtn i {
     color: #f1c6c6;
-    font-size: 1.5vw;
+    font-size: 3vw;
   }
   /* 헤더 끝 */
-  /* 컨테이너시작 */
-  /* section */
+  /* 컨테이너 시작 */
   /* con01 */
   /* con01 인트로 */
   .con01 {
@@ -85,63 +78,49 @@
     display: flex;
     align-items: center;
     position: relative;
-    box-sizing: border-box;
     color: #1e3568;
   }
   /* con01 div */
   .con01 div {
     width: 100%;
-    padding-left: 20%;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
   }
   /* con01 name */
-  .con01 .name {
-    margin-right: 8vw;
-    overflow: hidden;
-  }
   .con01 .name li {
-    font-size: 3vw;
+    font-size: 5vw;
     font-weight: normal;
-    line-height: 5vw;
-  }
-  .con01 .name li:nth-child(2) {
-    margin-left: 3vw;
+    line-height: 8vw;
   }
   /* con01 high */
   .con01 .high {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     color: #f1c6c6;
+    font-style: italic;
   }
   .con01 .high li {
-    font-size: 1.8vw;
-    line-height: 5vw;
+    font-size: 5vw;
+    line-height: 8vw;
   }
   /*계단식으로 보이게함 */
-  .con01 .high li:nth-child(1) {
-    margin-left: 0;
-  }
   .con01 .high li:nth-child(2) {
-    margin-left: 2vw;
     margin-top: -1vw;
   }
   .con01 .high li:nth-child(3) {
-    margin-left: 4vw;
     margin-top: -1vw;
   }
 
   .con01 .slogan {
+    width: 100%;
     position: absolute;
     left: 50%;
-    top: 50%;
+    bottom: 30%;
     transform: translate(-50%, -50%);
-    font-size: 1.2vw;
+    font-size: 3vw;
     height: 2vw;
-    line-height: 3vw;
+    line-height: 5vw;
     font-weight: bold;
     text-align: center;
   }
@@ -155,20 +134,23 @@
     width: 100%;
     height: 100vh;
     background: #f6f7f1;
-    padding: 2vw 0;
+    padding: 1vw 0;
     display: flex;
+    flex-direction: column;
   }
   /* con02 left */
   .con02 .left {
-    width: 20%;
-    height: 100%;
+    width: 100%;
+    height: 50%;
     background: #1e3568;
-    margin-left: 10vw;
     padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
   .con02 .left .img-wrap {
-    width: 90%;
-    height: 30%;
+    width: 50%;
+    height: 80%;
     margin: 0 auto;
   }
   .con02 .left img {
@@ -178,52 +160,58 @@
     border-radius: 50%;
     border: 5px solid #f1c6c6;
   }
-  .con02 .text p {
+  /* con02 text */
+  .con02 .text {
     color: #f1c6c6;
     width: 100%;
-    margin: 2vw;
-    font-size: 1.5vw;
+    margin: 5vw 0 2vw;
+    font-size: 3vw;
   }
   .con02 .text .name {
     font-weight: bold;
+    margin: 2vw;
   }
-  .con02 .text .email {
-    font-size: 1.2vw;
-  }
+
   /* con02 right */
   .con02 .right {
     color: #1e3568;
-    margin: 0 2vw;
-    width: 60%;
+    margin: 0 auto;
+    width: 100%;
+    height: 50%;
+    text-align: center;
   }
   .con02 .right h2 {
-    font-size: 3vw;
+    font-size: 5vw;
     margin: 3vw 0 5vw;
   }
   .con02 .right ul.wrap {
     display: flex;
     flex-direction: column;
     gap: 2vw;
+    word-break: break-all;
   }
   .con02 .right li {
     display: flex;
+    flex-direction: column;
   }
   .con02 .right .title {
-    font-size: 1.5vw;
+    font-size: 3vw;
     font-weight: bold;
-    width: 20%;
+    width: 100%;
   }
   .con02 .right .list {
-    font-size: 1.2vw;
-    line-height: 2.5vw;
+    font-size: 2.2vw;
+    line-height: 3.5vw;
   }
   /* con02 skill */
   .con02 .skill {
-    width: 80%;
+    width: 90%;
+    margin: 1vw auto;
   }
   /*skillWrap*/
   .con02 .skillWrap {
     width: 100%;
+    margin: 0 auto;
     display: flex;
     gap: 3vw;
     background-color: #fff;
@@ -231,6 +219,7 @@
   }
   .con02 .skillWrap li {
     width: 3vw;
+    margin: 0 auto;
     height: 3vw;
     flex-shrink: 0;
   }
@@ -241,6 +230,7 @@
   }
   .con02 .simply-scroll-clip {
     width: 100%;
+    margin: 0 auto;
     overflow: hidden;
   }
   /* con02 끝 */
@@ -249,9 +239,8 @@
     width: 100%;
     background-color: #1e3568;
     position: relative;
-    padding: 2vw 0;
+    padding: 20vw 0;
     color: #1e3568;
-    padding-bottom: 15vw;
   }
   .con03 h3 {
     color: #828282;
@@ -259,25 +248,23 @@
     margin: 1vw;
     width: 100%;
   }
-
   .con03 h2 {
     margin-bottom: 2vw;
-    font-size: 1.8vw;
+    font-size: 4vw;
   }
   /* con03 전체 ul */
   .con03 .clonCoding {
     width: 100%;
-    height: 300vh;
+    height: 180vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10vh;
-    padding-bottom: 20vh;
   }
   /* con03 전체 li large */
   .con03 .large {
-    width: 85vw;
-    height: 90vh;
+    width: 90%;
+    height: 60vh;
     background: #f6f7f1;
     border-radius: 1vw;
     border: 1vw solid #f1c6c6;
@@ -292,13 +279,10 @@
   }
   /* con03 .large02 */
   .con03 .large02 {
-    transform: translate(5vw, 2vw);
+    transform: translateY(2vw);
     z-index: 2;
   }
-  .con03 .large02 h3 {
-    text-align: right;
-    padding-right: 2vw;
-  }
+
   .con03 .large03 {
     transform: translate(-5vw, 4vw);
     z-index: 3;
@@ -307,20 +291,23 @@
   /* con03 작은 ul wrap */
   .con03 .wrap {
     display: flex;
+    flex-direction: column;
   }
   .con03 .wrap .txt {
-    line-height: 1.8vw;
-    font-size: 1.2vw;
+    line-height: 3.5vw;
+    font-size: 3vw;
   }
   /* con03 textWrap */
   .con03 .wrap .textWrap {
-    width: 50%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
   }
   .con03 .wrap .textWrap .tool {
     display: flex;
-    justify-content: start;
+    justify-content: center;
     width: 100%;
-    height: 3vw;
+    height: 8vw;
   }
   .con03 .wrap .textWrap .tool li img {
     width: 100%;
@@ -328,13 +315,13 @@
   }
   /* con03 imgWrap */
   .con03 .large .imgWrap {
-    width: 50%;
-    margin-top: 5vw;
+    width: 80%;
+    margin: 0 auto;
   }
   .con03 .large .imgWrap02 {
     margin-left: 10vw;
   }
-  .con03 .imgWrap-mo {
+  .con03 .imgWrap-pc {
     display: none;
   }
   .con03 .large .imgWrap img {
@@ -349,18 +336,21 @@
   /* con03 more */
   .con03 .more {
     border: 1px solid #243b37;
+    background: rgba(246, 247, 241, 0.5);
     border-radius: 5vw;
-    width: 6vw;
-    height: 2.2vw;
-    line-height: 2vw;
+    width: 24vw;
+    height: 8vw;
+    line-height: 7vw;
     text-align: center;
+    align-items: center;
     position: absolute;
-    top: 20vw;
-    left: 5vw;
+    bottom: -90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .con03 .more a {
     display: block;
-    font-size: 1vw;
+    font-size: 5vw;
   }
   .con03 .more:hover {
     cursor: pointer;
@@ -369,7 +359,6 @@
     color: #f1c6c6;
   }
   /* con03끝 */
-
   /* con04 시작*/
   .con04 {
     height: 300vh;
@@ -379,14 +368,14 @@
   .con04 h2 {
     color: #f6f7f1;
     position: absolute;
-    top: 50%;
+    top: 5%;
     left: 5vw;
-    font-size: 2vw;
+    font-size: 5vw;
     transform: translateY(-50%);
   }
   .con04 .scroll-box {
     position: sticky;
-    top: 0;
+    top: 10%;
     width: 100%;
     height: 100vh;
     overflow: hidden;
@@ -397,9 +386,9 @@
   .con04 .wrap {
     display: flex;
     gap: 5vw; /* 카드 사이의 여백 */
-    padding-left: 25vw; /* h2 타이틀 영역 공간 확보 (기존 margin 대신 padding 추천) */
-    padding-right: 5vw; /* 마지막 카드 여백 */
-    height: 80vh; /* 화면 높이의 80% 적용 */
+    padding-left: 25vw;
+    padding-right: 5vw;
+    /* height: 80vh; */
     color: #1e3568;
     list-style: none;
     margin: 0;
@@ -408,25 +397,25 @@
   /* con04 wrap large */
   .con04 .wrap .large {
     background: #f6f7f1;
-    width: 70vw; /* 타이틀 영역(25vw)을 고려하여 카드 한 장당 크기 조절 (100vw로 하면 타이틀이 가려짐) */
-    height: 100%;
-    flex-shrink: 0; /* ★중요: 지정한 width가 줄어들지 않도록 고정 */
-    padding: 2vw; /* 내부 여백 추가 */
+    width: 70vw;
+    /* height: 90%; */
+    flex-shrink: 0;
+    padding: 20vw 5vw;
     display: flex;
     flex-direction: column;
   }
   .con04 .wrap .large h3 {
-    font-size: 1.8vw;
+    font-size: 5vw;
     margin: 1vw 0;
-    width: 20vw;
+    /* width: 20vw; */
   }
   .con04 .wrap .large .txt {
-    font-size: 1vw;
-    width: 10vw;
+    font-size: 3vw;
+    /* width: 10vw; */
   }
   /* .con04 imgWrap */
   .con04 .imgWrap {
-    width: 65%;
+    /* width: 65%; */
     margin: 0 auto;
   }
   .con04 .imgWrap img {
@@ -437,20 +426,21 @@
   /* con04 textwrap */
   .con04 .textWrap {
     width: 100%;
-    margin-left: 25%;
-    margin-top: 5vw;
+    margin-left: 10%;
+    margin-top: 10%;
     display: flex;
+    flex-direction: column;
   }
   /* 툴 이미지 정렬을 위한 임시 추가 */
   .con04 .wrap .tool {
     display: flex;
     list-style: none;
     width: 100%;
-    margin: 0.5vw 0;
+    margin: 3vw 0 10vw;
     gap: 0.5vw;
   }
   .con04 .wrap .tool li {
-    height: 2vw;
+    height: 10vw;
   }
   .con04 .wrap .tool li img {
     width: 100%;
@@ -460,14 +450,15 @@
   .con04 .more {
     border: 1px solid #243b37;
     border-radius: 5vw;
-    width: 6vw;
-    height: 2.2vw;
-    line-height: 2vw;
+    width: 23vw;
+    height: 7.5vw;
+    line-height: 7vw;
     text-align: center;
+    align-items: center;
   }
   .con04 .more a {
     display: block;
-    font-size: 1vw;
+    font-size: 4vw;
   }
   .con04 .more:hover {
     cursor: pointer;
@@ -478,61 +469,63 @@
     color: #f1c6c6;
   }
   /* con04 끝 */
-
   /* con05시작 */
-  #java {
-    display: none;
-  }
   .con05 {
     color: #1e3568;
     width: 100vw;
     height: 100vh;
     background: #f6f7f1;
     position: relative;
+    display: none;
   }
-  .con05 .borderUnder {
-    border-bottom: 1px solid #1e3568;
+  .con05 .pc {
+    display: none;
   }
+  /* con05 mo */
   .con05 .title {
-    width: 20vw;
+    width: 45vw;
     font-weight: bold;
-    font-size: 3vw;
-    padding-top: 8vw;
+    font-size: 7vw;
+    padding-top: 30vw;
     margin-left: 5vw;
+    border-bottom: 1px solid #1e3568;
   }
   /* con05 textWrap */
   .con05 ul.textWrap {
     width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 1.5vw;
-    margin-top: 5vw;
+    gap: 10vw;
+    margin-top: 10vw;
   }
   .con05 .textWrap li {
     display: flex;
     gap: 1vw;
     width: 80vw;
-    margin: 0 auto;
+    margin: 5vw auto;
     padding-bottom: 1vw;
     cursor: pointer;
   }
   /* con05 left */
   .con05 .left {
-    width: 25%;
+    width: 100%;
   }
   .con05 .left p:nth-child(1) {
-    font-size: 2vw;
+    font-size: 5vw;
   }
   .con05 .left p:nth-child(2) {
-    font-size: 1.5vw;
+    font-size: 4vw;
   }
   /* con05 right */
   .con05 .right {
-    margin-top: 3vw;
-    font-size: 1.5vw;
+    position: absolute;
+    margin: 15vw 0 20vw;
+    word-break: keep-all;
+    font-size: 3vw;
+    width: 75%;
   }
   .con05 .right p {
-    font-size: 1.2vw;
+    border-bottom: 1px solid #1e3568;
   }
   /* con05 imgWrap */
   .con05 .imgWrap {
@@ -577,76 +570,36 @@
     background: #1e3568;
   }
   /* con05 끝 */
-
   /* con06 시작 */
   .con06 {
-    padding: 20vw 0;
+    background: #1e3568;
+    padding: 10vw 5vw;
   }
 
   /* title */
-  .con06 .title {
-    width: 100%;
-    font-size: 170px;
-    text-align: center;
-    /* color: #1e3568; */
-  }
-  .con06 .work {
+  .con06 .title-mo {
+    color: #f6f7f1;
+    font-size: 8vw;
     font-style: italic;
-    font-size: 220px;
+    padding-bottom: 5vw;
   }
+
   /* worklist */
   .con06 .worklist {
-    width: 70%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     position: relative;
   }
-  .con06 li {
-    width: 45%;
-    margin-top: 300px;
-  }
-  .con06 li:nth-child(2n) {
-    margin-top: 100px;
-  }
-  .con06 img {
+  .con06 .worklist li {
     width: 100%;
-    /* height: 700px; */
+    transform: translateY(200px);
+  }
+  .con06 .worklist img {
+    width: 100%;
     object-fit: cover;
-  }
-  /* 커튼이미지는 before, after를 이용함 */
-  .con06 .imgBox {
-    position: relative;
-  }
-  .con06 .imgBox::before {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #f6f7f1;
-    transition: 0.8s;
-    z-index: 5;
-    transition-delay: 0.3s;
-  }
-  .con06 .imgBox.active::before {
-    height: 0;
-  }
-  .con06 .imgBox::after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    background-color: #f6f7f1;
-    transition: 0.8s;
-    z-index: 10;
-  }
-  .con06 .imgBox.active::after {
-    height: 0;
   }
   /* con06 끝 */
   /* 컨테이너 끝 */
@@ -654,7 +607,7 @@
   /* footer */
   footer {
     width: 100vw;
-    height: 100vh;
+    height: 60vh;
     background: #f6f7f1;
     color: #1e3568;
     position: relative;
@@ -662,7 +615,7 @@
   /* contact글자효과 */
   footer .contact-full-wrapper {
     width: 100%;
-    height: 20vw;
+    height: 30vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -695,28 +648,24 @@
   }
   footer ul {
     width: 100%;
-    font-size: 1.5vw;
-  }
-  footer ul li {
+    font-size: 2.5vw;
+    display: flex;
+    flex-direction: column;
     position: absolute;
     bottom: 1vw;
-  }
-  footer ul .phone {
-    left: 3vw;
+    text-align: center;
   }
   footer ul .copyright {
-    right: 3vw;
+    margin: 2vw 0;
   }
   footer ul .copyright span {
     font-family: "Allura", cursive;
   }
   footer .hope {
     text-align: center;
-    font-size: 2vw;
-    font-weight: 500;
-    line-height: 1.6;
+    font-size: 3vw;
     position: absolute;
-    bottom: 30%;
+    top: 50%;
     left: 0;
     width: 100%;
   }

@@ -342,7 +342,7 @@
   }
   .con03 .large .textWrap {
     width: 40%;
-    padding: 3vw 5vw;
+    padding: 3vw 10vw;
     position: relative;
   }
 
@@ -356,7 +356,7 @@
     text-align: center;
     position: absolute;
     top: 20vw;
-    left: 5vw;
+    /* left: 5vw; */
   }
   .con03 .more a {
     display: block;

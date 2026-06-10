@@ -31,8 +31,9 @@ header nav {
   left: 0;
   color: #f1c6c6;
   display: none;
+  z-index: 100;
 }
-header nav ul {
+header nav ul.menu {
   position: absolute;
   top: 50%;
   left: 50%;
